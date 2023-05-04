@@ -1,0 +1,103 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--zinc-950);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 6.4rem 2.4rem;
+}
+
+header {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+header > h1, header > h1 > i {
+    font-size: 4rem;
+}
+
+.card {
+    background-color: #8b5cf60a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7.2rem;
+    padding: 6.4rem 4.8rem;
+    border-radius: .8rem;
+    border: 1px solid var(--violet-500);
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.card label {
+    font-size: 2.4rem;
+}
+
+.card > .input-link, .card > .output-link {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.card > .input-link > .input {
+    background-color: var(--zinc-800);
+    width: 100%;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input input, .output-link .short-link {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--violet-500);
+    font-size: 2.4rem;
+    padding: .8rem 1.2rem;
+}
+
+.input button {
+    background: transparent;
+    padding: 1.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.input button i {
+    font-size: 2.4rem;
+    transition: .5s color;
+}
+
+
+.input button i:hover {
+    color: var(--violet-500);
+}
+
+.card > .output-link {
+    display: none;
+    transition: .8s linear;
+}
+
+.output-link .short-link {
+    background-color: var(--zinc-800);
+    width: 100%;
+    border-radius: .4rem;
+    margin-top: .8rem;
+}
+
+.card > .output-link.show {
+    display: block;
+}
+
+footer > p, footer p > a {
+    font-size: 1.6rem;
+}
+
+footer p > a:hover {
+    color: var(--violet-500);
+}

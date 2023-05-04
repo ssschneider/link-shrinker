@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Link Shrink</title>
+
+    <script src="https://kit.fontawesome.com/9b2c422549.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fa-solid fa-link"></i>
+            Link Shrink
+        </h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <div class="input-link">
+                <label for="link">
+                    Enter a link:
+                </label>
+                <div class="input">
+                    <input 
+                        type="url"
+                        id="link"
+                        required 
+                        placeholder="Link to shrink comes here"
+                    />
+                    <button>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="output-link">
+                <label for="link">
+                    Short URL:
+                </label>
+                <div class="short-link">
+                    www.shortlink.com
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Developed by 
+                <a href="https://github.com/ssschneider" target="_blank">
+                    Sarah Schneider
+                </a>
+        </p>
+    </footer>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
